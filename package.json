@@ -2,7 +2,7 @@
   "name": "naman",
   "version": "1.0.0",
   "description": "assignmemt-1",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "start": "npm run lite",
     "lite": "lite-server",
