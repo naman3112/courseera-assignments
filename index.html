@@ -42,6 +42,8 @@
                     </div>
             </nav>
 
+          
+
             <div id="loginModal" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-lg" role="content">
                         <!-- Modal content-->
@@ -78,6 +80,109 @@
                         </div>
                     </div>
                 </div>
+
+          
+          
+          
+          
+          
+          
+          
+          
+            <div id="res" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg" role="content">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title"><strong>Reserve Table</strong> </h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                                
+                                                    
+                                                <form>
+                                                    <div class="form-row container">
+                                                            <div class="form-group ">
+                                                                    <label form="Date" class="col-form-label font-weight-bold">Number of Guests</label>
+                                                                    
+                                                                </div>
+                                                                <div class="radio  offset-sm-1 font-weight-bold">
+                                                                    <label class="ml-1 mr-1" ><input type="radio" name="optradio" checked>1</label>
+                                                                
+                                                                     <label class="ml-1 mr-1" ><input type="radio" name="optradio">2</label>
+                                                                  
+                                                                  
+                                                                  
+                                                                    <label class="ml-1 mr-1" ><input type="radio" name="optradio" >3</label>
+                                                                    <label class="ml-1 mr-1" ><input type="radio" name="optradio" >4</label>
+                                     
+                                                                  
+                                                                  
+                                                        
+                                                                    <label class="ml-1 mr-1"><input type="radio" name="optradio">5</label>
+                                                                
+                                                                  
+                                                                    <label class="ml-1 mr-1" ><input type="radio" name="optradio">6</label>
+                                                                  </div>
+                                                              
+                                                    </div>
+
+                                                    <div class="form-row">
+                                                        <div class="form-group col-sm-1 pl-3">
+                                                           
+                                                        <label  class="font-weight-bold">Section</label>
+                                                            
+                                                        </div>   
+                                                            
+                                                        <div class="offset-sm-3 btn-group btn-group-lg btn-group-toggle" data-toggle="buttons">
+                                                            <label class="btn font-weight-bold btn-success  active">
+                                                              <input type="radio" name="options" id="option1" autocomplete="off" checked>Non-smokers</label>
+                                                            <label class="btn font-weight-bold btn-danger">
+                                                              <input type="radio" name="options" id="option2" autocomplete="off">Smokers</label>
+                                                            
+                                                          </div>
+                                                          
+
+                                                        
+
+
+                                                    </div>
+
+                                                          <div class="form-row">
+
+                                    
+                                                                    <div class="form-group">
+                                                                        <label form="Date" class="col-sm-2 font-weight-bold col-form-label">Date and time</label>
+                                                                        <input type="text" class="col-sm-3 offset-sm-2 form-control-xs mr-1 offset-sm-1" id="firstname" name="firstname" placeholder="Date">
+                                                                        <input type="text" class="col-sm-3 form-control-xs " id="firstname" name="firstname" placeholder="Time">
+        
+                                                                    </div>
+                                                                                                                                    
+                                                              
+                                        
+                                                    </div>
+
+                                                    <div class="offset-sm-4">
+                                                        <button type="button" data-dismiss="modal"  class="btn btn-secondary ">Cancel</button>
+
+                                                    <input class="btn btn-primary font-weight-bold" type="submit" value="Reserve">
+                                                    
+                                                    </div>
+                                                    
+
+                                                </form>    
+                                                       
+                                                            </div>
+                            
+                                            </div>
+                                   
+                                        
+                                         </div> 
+                                        
+                                     
+                            </div>
+                
+                
         
          
 
@@ -93,8 +198,7 @@
                     </div>
                     <div class="col-12 col-sm align-self-center">
                             
-                     <a role="button"data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
-                        data-placement="bottom" class="btn btn-block font-weight-bold btn-lg btn-warning" href="#res">Reserve Table</a>
+                     <a role="button" data-toggle="modal" data-target="#res"  class="btn btn-block font-weight-bold btn-lg btn-warning" href="#res">Reserve Table</a>
                         </div>
                 </div>
             </div>
@@ -247,11 +351,7 @@
                         </div>
                     </div>
              </div>
-             <script>
-                    $(document).ready(function(){
-                        $('[data-toggle="tooltip"]').tooltip();
-                    });
-                </script>
+<!--              
              <div class="row justify-content-center pt-5" id="res">
 
                 <div class="col-12 col-sm-6">
@@ -271,13 +371,9 @@
                               
                               
                                 <label class="ml-1 mr-1" ><input type="radio" name="optradio" >3</label>
-                               
+                                <label class="ml-1 mr-1" ><input type="radio" name="optradio" >4</label>
+ 
                               
-                                <label class="ml-1 mr-1<script>
-                                        $(document).ready(function(){
-                                            $('[data-toggle="tooltip"]').tooltip();
-                                        });
-                                    </script>" ><input type="radio" name="optradio" checked>4</label>
                               
                     
                                 <label class="ml-1 mr-1"><input type="radio" name="optradio">5</label>
@@ -291,11 +387,7 @@
                             <dl class="row">
                        
 
-                                <div class="col-sm-3 fo<script>
-                                        $(document).ready(function(){
-                                            $('[data-toggle="tooltip"]').tooltip();
-                                        });
-                                    </script>rm-group ">
+                                <div class="col-sm-3 form-group ">
                                     <label form="Date" class=" font-weight-bold col-form-label">Date and time</label>
                                     
                                 </div>
@@ -307,7 +399,7 @@
                                 </div>                    <!-- <input class="btn btn-primary" type="submit" value="Reserve"> -->
 
                           
-                                <input class="btn ml-5 btn-primary font-weight-bold" type="submit" value="Reserve">
+                                <!-- <input class="btn ml-5 btn-primary font-weight-bold" type="submit" value="Reserve">
 
 
                            
@@ -321,8 +413,8 @@
                 </div>
        
                
-             </div>
-             
+             </div> -->
+            
          
    
             </div>
@@ -374,11 +466,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-            $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip();
-            });
-        </script>
  
 </body>
 
