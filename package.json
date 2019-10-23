@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npm run lite",
     "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +20,8 @@
   },
   "homepage": "https://github.com/naman3112/courseera-assignments#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.12.0"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
